@@ -8,7 +8,7 @@ const useGetMessages = () => {
   const getMessages = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/chats/${currentChat._id}`,
+        `https://quote-chat-app.onrender.com/chats/${currentChat._id}`,
         {
           method: "GET",
           headers: { "Content-Type": "application/json" },

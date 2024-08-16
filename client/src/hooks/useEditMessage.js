@@ -8,7 +8,7 @@ const useEditMessage = () => {
   const editMessage = async (message) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/messages/${messageId}`,
+        `https://quote-chat-app.onrender.com/messages/${messageId}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

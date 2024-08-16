@@ -1,16 +1,19 @@
 import { useContext } from "react";
-import { AuthContext} from "../context/AuthContext";
+import { AuthContext } from "../context/AuthContext";
 
 const useLogout = () => {
   const { setUser } = useContext(AuthContext);
 
   const logout = async () => {
     try {
-      const responce = await fetch("http://localhost:5000/auth/logout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: 'include',
-      });
+      const responce = await fetch(
+        "https://quote-chat-app.onrender.com/auth/logout",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
+      );
 
       const data = await responce.json();
       if (data.error) {

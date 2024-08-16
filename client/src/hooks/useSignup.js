@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AuthContext} from "../context/AuthContext";
+import { AuthContext } from "../context/AuthContext";
 
 const useSignup = () => {
   const { setUser } = useContext(AuthContext);
@@ -27,18 +27,21 @@ const useSignup = () => {
     }
 
     try {
-      const responce = await fetch("http://localhost:5000/auth/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: 'include',
-        body: JSON.stringify({
-          firstName,
-          lastName,
-          username,
-          password,
-          confirmPassword,
-        }),
-      });
+      const responce = await fetch(
+        "https://quote-chat-app.onrender.com/auth/signup",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify({
+            firstName,
+            lastName,
+            username,
+            password,
+            confirmPassword,
+          }),
+        }
+      );
 
       const data = await responce.json();
       if (data.error) {

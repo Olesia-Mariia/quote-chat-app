@@ -6,7 +6,7 @@ const useSendMessage = () => {
   const sendMessage = async (message) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/messages/send/${currentChat._id}`,
+        `https://quote-chat-app.onrender.com/messages/send/${currentChat._id}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

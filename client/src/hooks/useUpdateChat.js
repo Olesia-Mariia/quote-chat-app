@@ -6,7 +6,7 @@ const useUpdateChat = () => {
   const updateChat = async (firstName, lastName) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/chats/${currentChat._id}`,
+        `https://quote-chat-app.onrender.com/chats/${currentChat._id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
