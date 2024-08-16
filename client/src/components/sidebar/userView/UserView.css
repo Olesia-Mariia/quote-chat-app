@@ -1,0 +1,50 @@
+.user-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0.5rem 0;
+}
+
+.user-info {
+  display: flex;
+}
+
+.user-photo {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lighter-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
+.logout-button {
+  width: 4.5rem; 
+  height: 2rem; 
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lighter-color);
+  border: 1px solid var(--light-dark-color);
+  border-radius: 25px;
+  box-shadow: 0 2px 4px 0 var(--shadow-black-color);
+  color: var(--blue-font-colot);
+  font-size: 0.85rem; 
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.logout-button:hover {
+  background-color: var(--dark-color);
+}
+

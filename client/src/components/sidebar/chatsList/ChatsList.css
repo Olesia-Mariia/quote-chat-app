@@ -1,0 +1,24 @@
+.chats-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.chats-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+}
+
+.chats-list-title {
+  font-size: 1.25rem; 
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--blue-font-colot);
+  margin: 1.25rem 0.5rem;
+}
+
+.chats-preview-container {
+  max-height: 433px;
+  overflow: auto;
+}

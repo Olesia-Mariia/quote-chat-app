@@ -1,0 +1,12 @@
+.messages {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.no-messages-text { 
+  text-align: center;
+  margin-top: 100px;
+}

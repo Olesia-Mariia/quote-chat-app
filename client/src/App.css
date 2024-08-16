@@ -1,0 +1,103 @@
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.transparent-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark-transparent-color);
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 20rem;
+  margin: auto;
+  padding: 1.5rem;
+  background-color: #f1f5f9;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px var(--shadow-black-color), 0 2px 4px -2px var(--shadow-black-color);
+}
+
+.card-close-btn {
+  align-self: flex-end;
+}
+
+.card-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.25rem; 
+  text-align: center;
+}
+
+.form {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.lable {
+  display: block;
+  font-size: 1rem; 
+  line-height: 1.25rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: var(--lighter-color);
+  border: 1px solid var(--light-dark-color);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input:focus {
+  outline: #6b7280 auto 1px;
+}
+
+.input::placeholder {
+  color: var(--light-dark-color);
+}
+
+.submit-button {
+  width: 100%;  
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background-color: var(--dark-color);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px 0 var(--shadow-black-color);
+}
+
+.submit-button:hover {
+  background-color: var(--dark-color);
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.75rem; 
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--blue-font-colot);
+}

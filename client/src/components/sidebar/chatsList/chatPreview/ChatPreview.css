@@ -1,0 +1,42 @@
+.chat-preview {
+  display: flex;
+  padding: 0.85rem 0.5rem;
+  border-bottom: 1px solid var(--light-dark-color);
+  cursor: pointer;
+}
+
+.chat-preview-photo {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lighter-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chat-preview-info {
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+.chat-preview-name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.chat-preview-date {
+  font-size: 0.65rem;
+  font-weight: 400;
+}
+
+.chat-preview-text {
+  max-width: 250px;
+  font-size: 0.85rem;
+  color: var(--light-dark-color);
+}
+
+.chat-preview-text::after {
+  content: "...";
+}

@@ -1,0 +1,16 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border-right: 1px solid var(--light-dark-color);
+  background-color: var(--white-color);
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid var(--light-dark-color);
+  background-color: var(--light-color);
+  padding: 0.5rem;
+}

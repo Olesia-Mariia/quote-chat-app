@@ -1,0 +1,25 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.confirm-btn {
+  width: 45%;  
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background-color: var(--dark-color);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px 0 var(--shadow-black-color);
+}
+
+.deny-btn {
+  width: 45%;  
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background-color: var(--light-dark-color);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px 0 var(--shadow-black-color);
+  color: var(--dark-font-color);
+}
